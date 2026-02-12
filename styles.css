@@ -989,23 +989,29 @@ a:hover {
 
 @media (max-width: 768px) {
     .nav {
-        padding: 1rem;
+        padding: 0.75rem 1rem;
     }
 
     .nav-container {
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .nav-link {
-        font-size: 0.7rem;
-        padding: 0.5rem 0.8rem;
+        font-size: 0.65rem;
+        padding: 0.5rem 0.5rem;
         min-height: 44px;
         display: inline-flex;
         align-items: center;
+        letter-spacing: 0.08em;
     }
 
     .hero {
-        padding: 100px 1rem 3rem;
+        padding: 100px 1.5rem 3rem;
+    }
+
+    .hero-title {
+        font-size: clamp(2.2rem, 9vw, 4rem);
+        letter-spacing: 0.03em;
     }
 
     .hero-subtitle {
@@ -1025,10 +1031,15 @@ a:hover {
 
     .contract-container {
         padding: 0.75rem 1rem;
+        max-width: 100%;
     }
 
     .contract-address {
         gap: 0.5rem;
+    }
+
+    .ca-text {
+        font-size: 0.55rem;
     }
 
     .copy-btn {
@@ -1073,29 +1084,36 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-    .nav-link span {
-        display: none;
+    .nav-container {
+        gap: 0.5rem;
     }
 
-    .nav-link:first-child span,
-    .nav-link.active span {
-        display: inline;
+    .nav-link {
+        font-size: 0.6rem;
+        padding: 0.5rem 0.4rem;
+        letter-spacing: 0.05em;
     }
 
     .hero {
-        padding: 80px 0.75rem 2.5rem;
+        padding: 80px 1rem 2.5rem;
     }
 
     .hero-title {
+        font-size: clamp(1.8rem, 8vw, 3rem);
         letter-spacing: 0.02em;
     }
 
     .hero-subtitle {
         letter-spacing: 0.1em;
+        font-size: 0.7rem;
     }
 
     .contract-container {
         padding: 0.6rem 0.75rem;
+    }
+
+    .ca-text {
+        font-size: 0.5rem;
     }
 
     .book-frame {
